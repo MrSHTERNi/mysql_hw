@@ -25,7 +25,3 @@ INSERT INTO `hardware` (`title`, `price`, `amount`, `tag`) VALUES ('Ноутбу
 
 -- 9 Найти и удалить по названию из базы ошибочно добавленный товар Очки PS VR 2 
  DELETE `hardware` FROM `hardware` INNER JOIN `hardware` AS `h` ON `hardware`.`id` = `h`.`id` WHERE `h`.`title` = 'Очки PS VR 2';
-
-INSERT INTO `hardware` (`title`, `price`, `amount`, `tag`)
-VALUES
-  ('Ноутбук Lenovo 2BXKQ7E9XD', '54500', '1', 'new');
